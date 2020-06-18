@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&family=Domine&family=MuseoModerno:wght@200;300&family=Raleway:ital,wght@0,300;1,800&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Teko:wght@500&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Itim&family=Ubuntu:wght@300&display=swap');
+@keyframes anim1 {
+    50% {text-shadow: 5px 2px #336655;}
+    75% {font-style: oblique;}
+}
+@media screen and (max-width: 1000px) {
+    #content,
+    #asides {
+        width: 100%;
+        padding: 0;
+    }
+ }
+
+body {
+    margin: 0px;
+    padding: 0px;
+    word-spacing: 2px;
+    background-color:rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+.jumbotron {
+    font-family: "MuseoModerno";
+    font-size: 20px;
+    padding: 35px;
+    background-color: rgb(21, 125, 211);
+    text-align: center;
+    color: rgb(4, 12, 31);
+    height: min-content;
+    position: relative;
+}
+
+
+.h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+  }
+
+p[class*="uwaw"] {
+    text-transform: uppercase;
+    width: 55%;
+    margin: 0 auto;
+    padding: 2px;
+    border: solid;
+    border-width: 5px;
+    border-radius: 2cm;
+    border-color: rgb(34, 23, 13);
+    color: rgb(255, 255, 255);
+    background-color: rgb(226, 68, 115);
+    max-height: 35px;
+    overflow: auto;
+
+}
+
+nav li {
+    display: inline;
+    margin-right: 30px;
+}
+
+nav {
+    background-color: rgb(144, 217, 230);
+    padding: 4px;
+}
+
+a.nav-link:active {
+    color: rgb(187, 212, 117) !important;
+    font-weight: bolder !important;
+    margin: auto;
+    
+}
+
+a.nav-link {
+    font-family: 'Balsamiq Sans';
+    border-width: 2px;
+    border-style: solid;
+    border-color: #336655;
+    border-radius: 1cm;
+    color: white;
+    text-decoration: none;
+    background-color: darkslategrey;
+    margin: auto;
+
+}
+
+a.nav-link:hover {
+    color: rgb(159, 235, 8);
+    font-size: large;
+    margin: auto;
+}
+
+.shadow {
+    animation-name: anim1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+article h2 {
+    font-size: 30px;
+    font-family: "Teko", sans-serif;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    padding-left: 1.5em;
+}
+
+article {
+    border-width: 25px;
+    border-style: inset;
+    border-top-left-radius: 0.5cm;
+    border-bottom-right-radius: 0.5cm;
+    border-top-color: #db822e;
+    border-left-color: orange;
+    margin-bottom: 30px;
+    overflow: auto;
+
+}
+
+.paragraf {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    text-align: justify;
+    line-height: 2em;
+    margin-top: auto;
+}
+
+.paragraf::first-letter{
+    font-size: 32px;
+}
+
+
+.featured-image {
+    float: left;
+    width: 30%;
+    height: 200px;
+    object-fit: cover;
+    margin: 20px;
+    border:solid black;
+    border-radius: 1cm;
+}
+
+main {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.left {
+    float: left;
+    margin: 0px auto;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.right {
+    float: right;
+    margin: 0px auto;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+#footer {
+    padding: 15px;
+    margin: 0px;
+    line-height: 20px;
+    text-align: center;
+    background-color: rgb(138, 138, 255);
+}
+
+.footer-paragraph {
+    font-family: "Itim";
+    font-size: large;
+    font-variant: small-caps;
+}
+
+.asides-image {
+    width: 150px;
+    padding-left: 15px;
+    text-align: center;
+}
+
+#content {
+    float: left;
+    width: 78%;
+    box-sizing: border-box;
+}
+
+#asides {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 20%;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+
+#end {
+    margin: 0px;
+    border-width: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    border-style: solid;
+    border-color: aliceblue;
+    box-sizing: border-box;
+}
+
+#last-heading {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Francois One", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#last-paragraph {
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}
