@@ -1,15 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&family=Domine&family=MuseoModerno:wght@200;300&family=Raleway:ital,wght@0,300;1,800&family=Ubuntu:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Teko:wght@500&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Itim&family=Ubuntu:wght@300&display=swap');
 @keyframes anim1 {
     50% {text-shadow: 5px 2px #336655;}
     75% {font-style: oblique;}
 }
+@media screen and (max-width: 1000px) {
+    #content,
+    #asides {
+        width: 100%;
+        padding: 0;
+    }
+ }
 
 body {
     margin: 0px;
     padding: 0px;
     word-spacing: 2px;
-    background-color:rgb(233, 228, 190);
+    background-color:rgb(255, 255, 255);
+    box-sizing: border-box;
 }
 .jumbotron {
     font-family: "MuseoModerno";
@@ -22,25 +32,10 @@ body {
     position: relative;
 }
 
-.pacmanLeft {
-    width: 0px;
-    height: 0px;
-    border-right: 60px solid transparent;
-    border-top: 60px solid rgb(214, 211, 11);
-    border-left: 60px solid rgb(214, 211, 11);
-    border-bottom: 60px solid rgb(214, 211, 11);
-    border-top-left-radius: 60px;
-    border-top-right-radius: 60px;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
-    position: relative;
-    top: 115px;
-    left: 75px;
-    overflow: hidden;
-  }
 
-  .h1 {
-    font-size: auto;
+.h1 {
+    font-size: 3em;
+    text-transform: uppercase;
   }
 
 p[class*="uwaw"] {
@@ -69,13 +64,14 @@ nav {
     padding: 4px;
 }
 
-a:active {
+a.nav-link:active {
     color: rgb(187, 212, 117) !important;
     font-weight: bolder !important;
+    margin: auto;
     
 }
 
-a {
+a.nav-link {
     font-family: 'Balsamiq Sans';
     border-width: 2px;
     border-style: solid;
@@ -84,12 +80,14 @@ a {
     color: white;
     text-decoration: none;
     background-color: darkslategrey;
+    margin: auto;
 
 }
 
-a:hover {
+a.nav-link:hover {
     color: rgb(159, 235, 8);
     font-size: large;
+    margin: auto;
 }
 
 .shadow {
@@ -109,12 +107,14 @@ article h2 {
 }
 
 article {
-    border-width: 30px;
+    border-width: 25px;
     border-style: inset;
     border-top-left-radius: 0.5cm;
     border-bottom-right-radius: 0.5cm;
     border-top-color: #db822e;
     border-left-color: orange;
+    margin-bottom: 30px;
+    overflow: auto;
 
 }
 
@@ -130,7 +130,94 @@ article {
     font-size: 32px;
 }
 
-.firstdiv {
-    background-color: gray;
+
+.featured-image {
+    float: left;
+    width: 30%;
+    height: 200px;
+    object-fit: cover;
+    margin: 20px;
+    border:solid black;
+    border-radius: 1cm;
 }
 
+main {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.left {
+    float: left;
+    margin: 0px auto;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.right {
+    float: right;
+    margin: 0px auto;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+#footer {
+    padding: 15px;
+    margin: 0px;
+    line-height: 20px;
+    text-align: center;
+    background-color: rgb(138, 138, 255);
+}
+
+.footer-paragraph {
+    font-family: "Itim";
+    font-size: large;
+    font-variant: small-caps;
+}
+
+.asides-image {
+    width: 150px;
+    padding-left: 15px;
+    text-align: center;
+}
+
+#content {
+    float: left;
+    width: 78%;
+    box-sizing: border-box;
+}
+
+#asides {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 20%;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+
+#end {
+    margin: 0px;
+    border-width: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    border-style: solid;
+    border-color: aliceblue;
+    box-sizing: border-box;
+}
+
+#last-heading {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Francois One", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#last-paragraph {
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}

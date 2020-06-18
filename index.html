@@ -1,11 +1,11 @@
 <html lang="en">
     <head>
         <title>Website Percontohan</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style2.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <div class="jumbotron">
-            <div class="pacmanLeft"></div>
             <div>
                 <h1 class="shadow h1">Bandung</h1>
                 <p class="uwaw">Biggest Metropolitan City in West Java</p>
@@ -13,17 +13,17 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#history">HISTORY</a></li>
-                <li><a href="#geographic">GEOGRAPHIC</a></li>
-                <li><a href="#tourism">TOURISM</a></li>
+                <li><a href="#history" class="nav-link">HISTORY</a></li>
+                <li><a href="#geographic" class="nav-link">GEOGRAPHIC</a></li>
+                <li><a href="#tourism" class="nav-link">TOURISM</a></li>
             </ul>
         </nav>
 
-        <main>
-            <section>
+        <main id="content">
             <div>
                 <article>
                     <h2 id="history">history</h2>
+                    <a href="https://bit.ly/2AE6WPX" target="_blank"><img src="https://bit.ly/2AE6WPX" alt="Bandung Old View" title="Bandung Old View" class="featured-image"></a>
                     <p class="paragraf">The official name of the city during the colonial Dutch East Indies period was Bandoeng. 
                         The earliest reference to the area dates back to 1488, although archaeological findings 
                         suggest a type of Homo erectus species had long previously lived on the banks of the 
@@ -41,15 +41,79 @@
                         to a place near a pair of holy city wells (sumur Bandung), the present-day site of the city square (alun-alun). 
                         He built his dalem (palace), masjid agung (the grand mosque) and pendopo (public-official meeting place) 
                         in the classical Sundanese orientation,[13] with the pendopo facing Tangkuban Perahu mountain, 
-                        which was believed to have a mystical ambience.</p>
+                        which was believed to have a mystical ambience.
+                    </p>
+                </article>
+
+                <article id="geographic">
+                    <h2>geographic</h2>
+                    <a href="https://bit.ly/3hELpXN" target="_blank"><img src="https://bit.ly/3hELpXN" alt="Geographic" title="Bandung Geographic" class="featured-image"></a>
+                    <p class="paragraf">
+                        Bandung, the capital of West Java province, located about 180 kilometres (110 mi) southeast 
+                        of Jakarta, is the third-largest city in Indonesia. Its elevation is 768 metres (2,520 ft) 
+                        above sea level and is surrounded by up to 2,400 metres (7,900 feet) high Late Tertiary and 
+                        Quaternary volcanic terrain.[22] The 400 km2 flat of central Bandung plain is situated 
+                        in the middle of 2,340.88 square kilometres (903.82 sq mi) wide of the Bandung Basin; 
+                        the basin comprises Bandung, the Cimahi city, part of Bandung Regency, 
+                        part of West Bandung Regency, and part of Sumedang Regency.[23] 
+                        The basin's main river is the Citarum; one of its branches, the Cikapundung, 
+                        divides Bandung from north to south before it merges with Citarum again in Dayeuhkolot. 
+                        The Bandung Basin is an essential source of water for potable water, irrigation, and fisheries, 
+                        with its 6,147 million m3 (217.1 billion cu ft) of groundwater being a significant reservoir 
+                        for the city.[23] The northern section of Bandung is hillier than other parts of the city, 
+                        and the unique truncated flat-peak shape of the Tangkuban Perahu volcano 
+                        (Tangkuban Perahu literally means 'upside-down boat') can be seen from the city to the north. 
+                        Long-term volcanic activity has created fertile andisol soil in the north, suitable for intensive rice, 
+                        fruit, tea, tobacco, and coffee plantations. In the south and east, alluvial soils deposited by the 
+                        Cikapundung river predominate.
+                    </p>
+                </article>
+
+                <article>
+                    <h2 id="tourism">tourism</h2>
+                    <p class="paragraf">Since the opening of Cipularang Tol, Bandung has been the main destination in enjoying 
+                       the rest of weekend and reminiscence, especially for Greater Jakarta area visitors and 
+                       its neighborhoods</p>
+                    <div class="left">
+                        <h2>Farm House Lembang</h2>
+                        <a href="https://bit.ly/3ee2yWh" target="_blank"><img src="https://bit.ly/3ee2yWh" alt="Farm House" title="Farm House Lembang" class="featured-image"></a>
+                        <p class="paragraf">Located on the main road Bandung-Lembang. Farm House becomes
+                           visitor-crowded place. Apart from its strategic location, this amusement area also
+                           presents European atmosphere. All the pleasures are arranged in instagrammable selfie spots. 
+                        </p>
+                    </div>
+                    <div class="right">
+                        <h2>Bosscha Observatory</h2>
+                        <a href="https://bit.ly/2zIxUoR" target="_blank"><img src="https://bit.ly/2zIxUoR" alt="Bosscha" title="Bosscha Observatory" class="featured-image"></a>
+                        <p class="paragraf">Bosscha Observatory is the oldest modern observatory in Indonesia, 
+                           and one of the oldest in Asia. The observatory is located in Lembang, West Java, 
+                           approximately 15 kilometers (9.3 mi) north of Bandung.</p>
+                        <p class="paragraf">It has five large telescopes: the Zeiss double refractor to observe visual
+                                            binary stars, the Schmidt telescope to study galactic structures, the Bamberg
+                                            refractor to determine stellar magnitude and photometric studies, the Cassegrain
+                                            GOTO which was a gift from Japanese Government, and the Unitron refractor
+                                            to observe solar eclipse, sunspot photography, and other sky-objects.
+                        </p>
+                    </div>
                 </article>
             </div>
-            </section>
         </main>
 
-
-
-
+        <aside id="asides">
+            <article id="end">
+                <h3 id="last-heading">Kota Bandung</h2>
+                 <p id="last-paragraph">Kota Kembang Paris van Java</p>
+                 <figure>
+                    <img src="https://bit.ly/2CgS4qV" title="Bandung City Logo" class="asides-image">
+                    <p id="last-paragraph">Bandung Bermartabat</p>
+                 </figure>
+            </article>
+        </aside>
+        <div class="clear"></div>
+        
+        <footer id="footer">
+            <p class="footer-paragraph">Designed and Created by Christian Reivan &copy;2020</p>
+        </footer>
         
     </body>
 </html>
