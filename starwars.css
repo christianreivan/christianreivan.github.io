@@ -1,8 +1,27 @@
 body {
     margin: 0;
     background-color: black;
+    overflow: hidden;
   }
   
+
+.button {
+    position: absolute;
+    border-radius: 2em;
+    background-color: rgba(17, 8, 150, 0.774);
+    width: 80%;
+    height: 100%;
+    left: 0%;
+    top: 50%;
+    overflow: hidden;
+    background: transparent;
+
+}
+
+.buttonx:hover {
+    transform: scale(2);
+}
+
   .star {
     position: absolute;
     width: 1px;
@@ -120,3 +139,13 @@ body {
           top: -170%;
       }
   }
+
+@media screen and (max-width: 500px) {
+    #board {
+        font-size: 250%;
+        left: 75%;
+        margin-left: -5em;
+        width: 10em;
+    }
+
+}

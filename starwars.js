@@ -23,11 +23,13 @@ function getRandomPosition() {
 
 let audio = document.querySelector('#a1');
 window.addEventListener('mousedown', function() {
+    console.log('worked');
     audio.play();
 }
 );
 
 window.addEventListener('touchstart', function() {
-  audio.play();
+  console.log('mobile');
+  audio.muted = false;
 }
 );
