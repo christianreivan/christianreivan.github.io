@@ -3,24 +3,7 @@ body {
     background-color: black;
     overflow: hidden;
   }
-  
 
-.button {
-    position: absolute;
-    border-radius: 2em;
-    background-color: rgba(17, 8, 150, 0.774);
-    width: 80%;
-    height: 100%;
-    left: 0%;
-    top: 50%;
-    overflow: hidden;
-    background: transparent;
-
-}
-
-.buttonx:hover {
-    transform: scale(2);
-}
 
   .star {
     position: absolute;
@@ -60,23 +43,29 @@ body {
   /* Set the animation & hide the logo */
   .logo {    
       position: absolute;
-      top: 20%;
-      left: 45%;
+      top: 35%;
+      left: 40%;
       z-index: 1;
       margin: auto;
-      animation: logo 9s ease-out 9s;
+      animation: logo 6s cubic-bezier(0.785, 0.135, 0.15, 0.86) 9s;
       opacity: 0;
   }
   
   .logo svg {
+      width: 15em;
+      height: 15em;
+  }
+
+  .logo svg polygon {
       width: inherit;
+      fill: yellow;
   }
   
   /* Scale the logo down and maintain it centered */
   @keyframes logo {
       0% {
           width: 18em;        
-          transform: scale(2.75);
+          transform: scale(2);
           opacity: 1;
       }
       50% {
