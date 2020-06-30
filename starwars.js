@@ -26,3 +26,8 @@ window.addEventListener('mousedown', function() {
     audio.play();
 }
 );
+
+window.addEventListener('touchstart', function() {
+  audio.play();
+}
+);
